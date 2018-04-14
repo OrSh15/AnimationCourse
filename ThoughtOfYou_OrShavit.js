@@ -757,16 +757,12 @@ p.nominalBounds = new cjs.Rectangle(0,-6.8,534.3,411.1);
 	this.shape_8.setTransform(110.3,49.4);
 
 	this.shape_9 = new cjs.Shape();
-	this.shape_9.graphics.f().s("#66FFFF").ss(2.5,1,1).p("AvnpfIfPAAIAAS/I/PAAg");
+	this.shape_9.graphics.f("#CC3399").s().p("AvnJgIAAy/IfPAAIAAS/g");
 	this.shape_9.setTransform(155.2,72);
 
-	this.shape_10 = new cjs.Shape();
-	this.shape_10.graphics.f("#CC3399").s().p("AvnJgIAAy/IfPAAIAAS/g");
-	this.shape_10.setTransform(155.2,72);
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.replayBtn, new cjs.Rectangle(54,10,202.5,124.1), null);
+}).prototype = getMCSymbolPrototype(lib.replayBtn, new cjs.Rectangle(55.2,11.2,200,121.6), null);
 
 
 (lib.___Camera___ = function(mode,startPosition,loop) {
@@ -821,9 +817,6 @@ p.nominalBounds = new cjs.Rectangle(0,-6.8,534.3,411.1);
 	this.frame_1 = function() {
 		playSound("ThoughtofYoubyRyanWoodward1mp3cutnetmp3copy");
 	}
-	this.frame_721 = function() {
-		createjs.Sound.stop();
-	}
 	this.frame_722 = function() {
 		var self = this;
 		self.stop();
@@ -834,10 +827,11 @@ p.nominalBounds = new cjs.Rectangle(0,-6.8,534.3,411.1);
 		{
 			self.gotoAndPlay(1);
 		}
+		createjs.Sound.stop();
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(720).call(this.frame_721).wait(1).call(this.frame_722).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1).call(this.frame_1).wait(721).call(this.frame_722).wait(1));
 
 	// Camera
 	this.___camera___instance = new lib.___Camera___();
@@ -1280,8 +1274,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Bitmap1.png?1523482830972", id:"Bitmap1"},
-		{src:"sounds/ThoughtofYoubyRyanWoodward1mp3cutnetmp3copy.mp3?1523482830972", id:"ThoughtofYoubyRyanWoodward1mp3cutnetmp3copy"}
+		{src:"images/Bitmap1.png?1523730419861", id:"Bitmap1"},
+		{src:"sounds/ThoughtofYoubyRyanWoodward1mp3cutnetmp3copy.mp3?1523730419861", id:"ThoughtofYoubyRyanWoodward1mp3cutnetmp3copy"}
 	],
 	preloads: []
 };
